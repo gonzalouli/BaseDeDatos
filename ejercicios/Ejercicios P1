@@ -1,0 +1,162 @@
+*/ Tema 2 /*
+
+*/ejercicio 1 */
+
+select *
+from proveedores;
+select *
+from tiendas;
+select *
+from articulos;
+select *
+from clientes;
+select *
+from ventas;
+select *
+from suministros;
+select *
+from pesos;
+
+*/ejercicio 2 */ 
+
+select PRV_NOM
+	from proveedores;
+
+*/ejercicio 3 /*
+
+select CLT_NOM,CLT_APELL
+from clientes;
+
+*/ejercicio 4/*
+
+select TDA_GER
+from tiendas;
+
+*/ejercicio 5/*
+
+select TDA_GER,TDA_POB
+from tiendas;
+
+*/ejercicio 6/*
+
+select distinct CLT_POB
+from clientes;
+
+*/ejercicio 7/*
+
+select distinct ART_NOM
+from articulos;
+
+
+*/ejercicio 8/*
+
+select distinct ART_COL
+from articulos;
+
+*/ejercicio 9 /*
+
+select distinct CLT_POB localidad
+from clientes;
+
+*/ejercicio 10 /*
+
+select CLT_NOM
+from clientes
+where CLT_POB like 'madrid%'
+
+*/ ejercicio 11/*
+
+select *
+from articulos 
+where ART_PESO > 500;
+
+
+*/ejercicio 12*/
+
+select *
+from clientes
+where like != 'e' ;
+
+
+*/ejercicio 13*/
+
+
+select *
+from articulos 
+where ART_Pv>=2*ART_PC ;
+
+
+*/ejercicio 14/*
+
+select VNT_CANT
+from ventas
+where VNT_CLT =1 ;
+
+*/ejercicio 15*/
+
+select * 
+from articulos
+where ART_PESO > 100 AND ART_COL='rojo' ;
+
+*/ ejercicio 16/*
+
+select*
+from articulos
+where ART_PESO > 500 OR ART_COL = 'rojo' ;
+
+*/ ejercicio 17 /*
+
+select *
+from articulos
+where NOT(ART_PESO > 500 OR ART_COL = 'rojo');
+
+
+*/ ejercicio 18 /*
+
+select *
+from articulos
+where (ART_PESO > 100 AND ART_COL ='rojo') OR ART_COL='verde' ;
+
+
+
+*/ ejercicio 19 /*
+
+select *
+from articulos
+where ART_COL!=blanco AND ART_COL!='negro';
+
+
+*/ ejercicio 20 /*
+
+select *
+from articulos
+where ART_PC BETWEEN 20 AND 30
+
+
+*/ ejercicio 21 /*
+
+select *
+from articulos
+where ART_PESO is null AND ART_COL is null;
+
+
+*/`ejercicios 22 /*
+
+select *
+from articulos
+where ART_COL='rojo' OR ART_COL='verde' ;
+
+*/ ejercicio 23 /* 
+
+select *
+from ventas
+where VNT_FCH = '910109' ;
+
+
+
+
+
+
+
+
+
