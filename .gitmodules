@@ -1,0 +1,3 @@
+[submodule "bbdd"]
+	path = bbdd
+	url = https://github.com/guilogar/bbdd.git
